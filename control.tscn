@@ -1,0 +1,72 @@
+[gd_scene load_steps=5 format=3 uid="uid://clvf0ncf6fa37"]
+
+[ext_resource type="Texture2D" uid="uid://chj3poji08kbv" path="res://data/images/court.png" id="1_lpv6e"]
+[ext_resource type="Texture2D" uid="uid://bwa7ojtfyufuj" path="res://data/images/ball.png" id="2_1y2vj"]
+[ext_resource type="Texture2D" uid="uid://bjemafokfkxox" path="res://data/images/paddle.png" id="3_3ayfc"]
+
+[sub_resource type="Theme" id="Theme_rhkij"]
+
+[node name="MainWindow" type="Node2D"]
+
+[node name="Court" type="Sprite2D" parent="."]
+position = Vector2(401, 302)
+texture = ExtResource("1_lpv6e")
+
+[node name="StartMenu" type="Node2D" parent="."]
+visible = false
+
+[node name="Title" type="Label" parent="StartMenu"]
+offset_left = 208.0
+offset_top = 43.0
+offset_right = 597.0
+offset_bottom = 110.0
+theme = SubResource("Theme_rhkij")
+text = "Simplepong"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemList" type="ItemList" parent="StartMenu"]
+offset_left = 106.0
+offset_top = 235.0
+offset_right = 551.0
+offset_bottom = 358.0
+item_count = 4
+item_0/text = "Single Player"
+item_1/text = "2 players"
+item_2/text = "Options"
+item_3/text = "Exit"
+
+[node name="OptionsMenu" type="Control" parent="StartMenu"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Game" type="Node2D" parent="."]
+
+[node name="Ball" type="Sprite2D" parent="Game"]
+position = Vector2(403, 313)
+texture = ExtResource("2_1y2vj")
+
+[node name="Paddle" type="Sprite2D" parent="Game"]
+position = Vector2(762, 310)
+texture = ExtResource("3_3ayfc")
+
+[node name="Paddle2" type="Sprite2D" parent="Game"]
+position = Vector2(65, 314)
+texture = ExtResource("3_3ayfc")
+
+[node name="ScoreP1" type="Label" parent="Game"]
+offset_left = 139.849
+offset_top = 21.1893
+offset_right = 353.849
+offset_bottom = 141.189
+text = "0"
+
+[node name="ScoreP2" type="Label" parent="Game"]
+offset_left = 597.854
+offset_top = 15.1361
+offset_right = 653.854
+offset_bottom = 38.1361
+text = "0
+"

@@ -1,0 +1,21 @@
+[remap]
+
+importer="font_data_image"
+type="FontFile"
+uid="uid://4ugo707wt1r7"
+path="res://.godot/imported/good_neighbors.png-daea38ad9e6e3ec619e1f8108ee4016c.fontdata"
+
+[deps]
+
+source_file="res://data/images/good_neighbors.png"
+dest_files=["res://.godot/imported/good_neighbors.png-daea38ad9e6e3ec619e1f8108ee4016c.fontdata"]
+
+[params]
+
+character_ranges=PackedStringArray()
+columns=127
+rows=1
+image_margin=Rect2i(0, 0, 0, 0)
+character_margin=Rect2i(0, 0, 0, 0)
+fallbacks=[]
+compress=true
